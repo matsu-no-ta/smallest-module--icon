@@ -200,17 +200,30 @@ component > icon
 ------------------------------
 */
 /* 基本形 */
-.before-icon {
+.before-icon::before {
+    display: inline-block;
+    margin-right: .3em;
     color: var(--color-black);
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
-}
-
-.before-icon::before {
-    margin-right: .3em;
 }
 
 .before-icon--pdf::before {
     content: '\f1c1';
 }
 
+/* cssによるアイコン実装 */
+.before-icon-2::before {
+    display: inline-block;
+    margin-right: .3em;
+    color: var(--color-black);
+}
+
+.before-icon-2--chevron-left::before {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-bottom: .125em solid var(--color-black);
+    border-left: .125em solid var(--color-black);
+    transform: rotate(45deg)translateY(-30%);
+}
