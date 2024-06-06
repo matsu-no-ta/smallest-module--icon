@@ -212,7 +212,7 @@ component > icon
     content: '\f1c1';
 }
 
-/* cssによるアイコン実装 */
+/* cssによるアイコン実装（先頭） */
 .before-icon-2::before {
     display: inline-block;
     margin-right: .3em;
@@ -225,5 +225,21 @@ component > icon
     height: .375em;
     border-bottom: .125em solid var(--color-black);
     border-left: .125em solid var(--color-black);
-    transform: rotate(45deg)translateY(-30%);
+    transform: rotate(45deg)translateY(-50%);
+}
+
+/* cssによるアイコン実装（末尾） */
+.after-icon::after {
+    display: inline-block;
+    margin-right: .3em;
+    color: var(--color-black);
+}
+
+.after-icon--chevron-right::after {
+    content: '';
+    width: .375em;
+    height: .375em;
+    border-top: .125em solid var(--color-black);
+    border-right: .125em solid var(--color-black);
+    transform: rotate(45deg)translateY(-50%)
 }
