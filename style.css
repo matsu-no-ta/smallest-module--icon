@@ -3,7 +3,7 @@ global > color
 ------------------------------
 */
 :root {
-    --color-black: #333;
+    --color-base: #385b41;
 }
 
 /*!
@@ -191,10 +191,16 @@ utility > utility
     margin: -1px !important;
 }
 
+/* ----- */
 .c-mtb {
     margin: 16px 0;
     text-align: center;
 }
+
+html {
+    color: var(--color-base);
+}
+/* ----- */
 
 /*!
 component > icon
@@ -204,7 +210,7 @@ component > icon
 .before-icon::before {
     display: inline-block;
     margin-right: .3em;
-    color: var(--color-black);
+    color: var(--color-base);
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
 }
@@ -217,15 +223,15 @@ component > icon
 .before-icon-2::before {
     display: inline-block;
     margin-right: .3em;
-    color: var(--color-black);
+    color: var(--color-base);
 }
 
 .before-icon-2--chevron-left::before {
     content: '';
     width: .375em;
     height: .375em;
-    border-bottom: .125em solid var(--color-black);
-    border-left: .125em solid var(--color-black);
+    border-bottom: .125em solid var(--color-base);
+    border-left: .125em solid var(--color-base);
     transform: rotate(45deg)translateY(-50%);
 }
 
@@ -233,14 +239,14 @@ component > icon
 .after-icon::after {
     display: inline-block;
     margin-right: .3em;
-    color: var(--color-black);
+    color: var(--color-base);
 }
 
 .after-icon--chevron-right::after {
     content: '';
     width: .375em;
     height: .375em;
-    border-top: .125em solid var(--color-black);
-    border-right: .125em solid var(--color-black);
+    border-top: .125em solid var(--color-base);
+    border-right: .125em solid var(--color-base);
     transform: rotate(45deg)translateY(-50%)
 }
